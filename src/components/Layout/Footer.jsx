@@ -20,32 +20,37 @@ const Footer = () => {
               </Link>
             </div>
             <p className="mb-24">
-              Transform Your Space with the Best Housekeeping Essentials!
+              Empowering Workplaces with Quality Essentials!
             </p>
           </div>
 
-          <div className="footer-item" style={{maxWidth:'500px'}}>
-            <div className="flex-align gap-16 mb-16" style={{flexWrap:'wrap'}}>
+          <div className="footer-item" style={{ maxWidth: "500px" }}>
+            <div
+              className="flex-align gap-16 mb-16"
+              style={{ flexWrap: "wrap" }}
+            >
               <FaPhoneAlt />
               <a
                 href={`tel:${phone1}`}
                 className="text-md text-gray-900 hover-text-main-600"
               >
                 {phone1}
-              </a>
-              {" "}|{" "}
+              </a>{" "}
+              |{" "}
               <a
                 href={`tel:${phone2}`}
                 className="text-md text-gray-900 hover-text-main-600"
               >
                 {phone2}
-              </a>{" "}|{" "}<br />
+              </a>{" "}
+              | <br />
               <a
                 href={`tel:${phone3}`}
                 className="text-md text-gray-900 hover-text-main-600"
               >
                 {phone3}
-              </a>{" "}|{" "}
+              </a>{" "}
+              |{" "}
               <a
                 href={`tel:${phone4}`}
                 className="text-md text-gray-900 hover-text-main-600"
