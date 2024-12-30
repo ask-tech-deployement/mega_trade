@@ -18,7 +18,7 @@ const Photo = styled.img`
 
 const BrandsSlideShow = () => {
   // Dynamically generate image paths
-  const photos = times(24, (i) => `assets/images/brands/${i}.png`);
+  const photos = times(155, (i) => `assets/images/brands/${i}.png`);
 
   return (
     <div className="mt-24">
@@ -29,7 +29,7 @@ const BrandsSlideShow = () => {
           direction="ltr"          
           style={{ height: "100%", overflow: "hidden" }}
         >
-          {times(24, (id) => (
+          {times(155, (id) => (
             <Photo
               src={photos[id]} // Start from the next set of images
               key={`marquee-example-2-${id}`}
@@ -43,7 +43,7 @@ const BrandsSlideShow = () => {
             />
           ))}
         </Marquee>
-        {/* <Marquee
+        <Marquee
           key="marquee-2"
           velocity={10}
           direction="rtl"
@@ -62,7 +62,7 @@ const BrandsSlideShow = () => {
               className="top-brand__item flex-center rounded-8 border border-gray-100 hover-border-gray-200 transition-1 px-8"
             />
           ))}
-        </Marquee> */}
+        </Marquee>
       </div>
     </div>
   );

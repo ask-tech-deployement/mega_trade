@@ -10,7 +10,7 @@ import { IoLogInOutline } from "react-icons/io5";
 import logo from "../../assets/header/logo.png";
 import axios from "../../axios";
 import cartContext from "../Context/cartContext";
-import {phone1,phone2,phone3,phone4,email,address} from '../../utils'
+import {phone1,phone2,phone3,phone4,email} from '../../utils'
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -199,26 +199,26 @@ const Header = () => {
                 onClick={() => handleMenuClick(0)}
                 className="nav-menu__item "
               >
-                <Link to="/" className="nav-menu__link">
+                <Link to="/" className={`nav-menu__link ${activeIndex===3?"activePage":''}`}>
                   Home
                 </Link>
               </li>
               <li onClick={() => handleMenuClick(1)} className="nav-menu__item">
-                <Link to="/about" className="nav-menu__link">
+                <Link to="/about" className={`nav-menu__link ${activeIndex===3?"activePage":''}`}>
                   About Us
                 </Link>
               </li>
 
               <li
-                onClick={() => handleMenuClick(4)}
+                onClick={() => handleMenuClick(2)}
                 className="nav-menu__item "
               >
-                <Link to="#" className="nav-menu__link">
+                <Link to="#" className={`nav-menu__link ${activeIndex===3?"activePage":''}`}>
                   Brochure
                 </Link>
               </li>
-              <li className="nav-menu__item">
-                <Link to="/contact" className="nav-menu__link">
+              <li onClick={() => handleMenuClick(3)} className="nav-menu__item">
+                <Link to="/contact" className={`nav-menu__link ${activeIndex===3?"activePage":''}`}>
                   Contact Us
                 </Link>
               </li>
@@ -479,29 +479,25 @@ const Header = () => {
               <div className="header-menu d-lg-block d-none">
                 {/* Nav Menu Start */}
                 <ul className="nav-menu flex-align ">
-                  <li className="nav-menu__item">
-                    <Link to="/" className="nav-menu__link">
+                  <li onClick={() => handleMenuClick(0)} className="nav-menu__item">
+                    <Link to="/" className={`nav-menu__link ${activeIndex===0?"activePage":''}`}>
                       Home
                     </Link>
                   </li>
-                  <li className="nav-menu__item">
-                    <Link to="/about" className="nav-menu__link">
+                  <li onClick={() => handleMenuClick(1)} className="nav-menu__item">
+                    <Link  to="/about" className={`nav-menu__link ${activeIndex===1?"activePage":''}`}>
                       About Us
                     </Link>
                   </li>
-                  <li className="nav-menu__item">
-                    <Link to="#" className="nav-menu__link">
+                  <li onClick={() => handleMenuClick(2)} className="nav-menu__item">
+                    <Link to="#" className={`nav-menu__link ${activeIndex===2?"activePage":''}`}>
                       Brochure
                     </Link>
                   </li>
-                  <li className="nav-menu__item">
+                  <li onClick={() => handleMenuClick(3)} className="nav-menu__item">
                     <NavLink
                       to="/contact"
-                      className={(navData) =>
-                        navData.isActive
-                          ? "nav-menu__link activePage"
-                          : "nav-menu__link"
-                      }
+                      className={`nav-menu__link ${activeIndex===3?"activePage":''}`}
                     >
                       Contact Us
                     </NavLink>
@@ -520,8 +516,8 @@ const Header = () => {
                     type="button"
                     className="flex-align search-icon d-lg-none d-flex gap-4 item-hover-two"
                   >
-                    <span className="text-2xl text-white d-flex position-relative item-hover__text">
-                      <i className="ph ph-magnifying-glass" />
+                    <span className="text-2xl d-flex position-relative item-hover__text">
+                      <i className="ph ph-magnifying-glass text-white" />
                     </span>
                   </button>
 
@@ -530,7 +526,7 @@ const Header = () => {
                     className="flex-align flex-column gap-8 item-hover-two"
                   >
                     <span className="text-2xl text-white d-flex position-relative item-hover__text">
-                      <IoLogInOutline />
+                      <IoLogInOutline color="white" />
                     </span>
                     <span className="text-md text-white item-hover__text d-none d-lg-flex">
                       Login
@@ -541,8 +537,8 @@ const Header = () => {
                     to="/cart"
                     className="flex-align flex-column gap-8 item-hover-two"
                   >
-                    <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
-                      <i className="ph ph-shopping-cart-simple" />
+                    <span className="text-2xl d-flex position-relative me-6 mt-6 item-hover__text">
+                      <i className="ph ph-shopping-cart-simple text-white" />
                       {Object.keys(cartItems).length > 0 && (
                         <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
                           {Object.keys(cartItems).length || ""}
@@ -558,10 +554,10 @@ const Header = () => {
               <button
                 onClick={handleMenuToggle}
                 type="button"
-                className="toggle-mobileMenu d-lg-none ms-3n text-gray-800 text-4xl d-flex"
+                className="toggle-mobileMenu d-lg-none ms-3n text-gray-800 text-4xl d-flex "
               >
                 {" "}
-                <i className="ph ph-list" />{" "}
+                <i className="ph ph-list text-white" />{" "}
               </button>
             </div>
             {/* Header Right End  */}

@@ -112,7 +112,7 @@ const Brands = () => {
               ))}
             </Slider>
           </div>
-          <BrandsSlideShow />
+          {/* <BrandsSlideShow /> */}
         </div>
       </div>
     </div>

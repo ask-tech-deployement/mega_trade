@@ -92,7 +92,7 @@ const FeaturedOneHome = ({ title, categoryid }) => {
     <section className="featured-products my-30">
       <div className="container container-lg">
         <div className="row g-4 flex-wrap-reverse">
-          <div className="col-xxl-8">
+          <div className="col-xl-8">
             <div className="border border-gray-100 p-24 rounded-16">
               <div className="section-heading mb-24">
                 <div className="flex-between flex-wrap gap-8">
@@ -114,7 +114,7 @@ const FeaturedOneHome = ({ title, categoryid }) => {
                       key={product.Product_Details_Id}
                       className="border border-gray-100 hover-border-main-600 rounded-16"
                     >
-                      <div className="col-xxl-6 ">
+                      <div className="col-xl-6 ">
                         <div className="">
                           <div className="mt-24 product-card d-flex gap-16 p-16 transition-2">
                             <img
@@ -154,7 +154,7 @@ const FeaturedOneHome = ({ title, categoryid }) => {
                       key={product.Product_Details_Id}
                       className="border border-gray-100 hover-border-main-600 rounded-16"
                     >
-                      <div className="col-xxl-6 ">
+                      <div className="col-xl-6 ">
                         <div className="">
                           <div className="mt-24 product-card d-flex gap-16 p-16    transition-2">
                             <img
@@ -189,7 +189,7 @@ const FeaturedOneHome = ({ title, categoryid }) => {
               </div>
             </div>
           </div>
-          <div className="col-xxl-4">
+          <div className="col-xl-4">
             <div className="position-relative rounded-16 bg-light-purple overflow-hidden p-28 pb-0 z-1 text-center h-100">
               <img
                 src="assets/images/bg/featured-product-bg.png"
@@ -215,7 +215,7 @@ const FeaturedOneHome = ({ title, categoryid }) => {
               <img
                 src={chairo}
                 alt=""
-                className="d-xxl-inline-flex d-none"
+                className="d-xl-inline-flex d-none"
                 style={{ objectFit: "contain", maxHeight: "449px" }}
               />
             </div>

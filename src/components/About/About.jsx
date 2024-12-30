@@ -6,110 +6,149 @@ import Brands from "../Home/Brands";
 const About = () => {
   return (
     <>
-      <section className="about-us-section py-48">
+      <section className="about-us-section py-40 bg-light">
         <div className="container">
-          {/* Header */}
-          <div className="text-center mt-18 mb-56">
-            <h1 className="display-4 font-weight-bold">
-              ABOUT <span style={{ color: "blue" }}></span>Mega Trade Inc
-            </h1>
-            <p className="lead text-muted">
-              Complete Office Supplies Solutions
-            </p>
-            <p className="h5 text-muted mb-20">
-              Create a Creative Workspace With Us
-            </p>
-          </div>
-
-          {/* About Us Description */}
-          <div className="row mb-5">
-            <div className="col-lg-6">
-              <p className="lead text-dark">
-              Mega Trade Inc is a trusted workplace solutions provider established in 2017 and headquartered in Bangalore, India. We specialize in supplying stationery, office consumables, pantry essentials, housekeeping supplies, and equipment to corporate clients. Our services are tailored to meet the unique needs of administrators and facilities managers, offering them peace of mind with reliable, timely, and consistent quality supplies.
-              </p>
-              <p className="lead text-dark">
-              Our team of dedicated professionals brings a collective experience of over 40 years in corporate supply, ensuring seamless service delivery and customer satisfaction. With operations spanning Bangalore, Chennai, and Mumbai, MTI leverages its extensive industry expertise to cater to diverse workplace requirements.
-              </p>
-              <p className="lead text-dark">
-              In addition, we have developed high-quality housekeeping (cleaning) chemicals that match the performance of leading brands like TASKI and 3M. These innovative products can help you reduce your facilities management costs for chemicals by up to 30%, ensuring both efficiency and affordability without compromising on quality.
-
-              </p>
+          {/* Hero Section */}
+          <div className="row align-items-center mx-5 py-36 ">
+            <div className="col-lg-6 my-4 mb-lg-0">
+              <h5 className="font-weight-bold text-primary mb-3 flex-align-start">
+                About <span className="text-dark">Mega Trade Inc</span>
+              </h5>
+              <h2 className="mb-3">
+                Your trusted partner for workplace solutions since 2017.
+              </h2>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 text-center">
               <img
                 src="https://buroneed.com/wp-content/uploads/2020/02/about-banner-01-2.jpg"
-                alt="About Us"
-                className="img-fluid rounded-52"
+                alt="About Mega Trade Inc"
+                className="img-fluid rounded shadow"
+                style={{ maxHeight: "400px" }}
               />
             </div>
           </div>
-
-          {/* What Makes Us Unique */}
-          <div className="row my-56">
-            <div className="col-12 text-center">
-              <h2 className="text-dark font-weight-bold my-36 text-primary-400">
-                What Makes Us Unique
-              </h2>
-              <p className="h6 text-muted">
-              At MTI, we believe in delivering honest, no-nonsense solutions that empower businesses to focus on their core operations. We emphasize eco-friendly and sustainable practices, integrating recycled products into our offerings wherever possible. Our commitment to transparency, quality, and sustainability sets us apart in the industry.
-              </p>
-            </div>
+          <div className="row">
+            <p className="text-dark">
+              We specialize in high-quality office supplies, housekeeping
+              consumables, pantry essentials, and more, ensuring reliable and
+              consistent service tailored to your corporate needs.
+            </p>
           </div>
-
-          {/* Statistics and Collaborations */}
-          <div className="row text-center my-56">
-            <div className="col-md-4">
-              <div className="stat-card p-4 rounded shadow-sm">
-                <h3 className="text-dark">250+</h3>
-                <p className="text-muted">Satisfied Clients</p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="stat-card p-4 rounded shadow-sm">
-                <h3 className="text-dark">8+</h3>
-                <p className="text-muted">Years of Experience</p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="stat-card p-4 rounded shadow-sm">
-                <h3 className="text-dark">Pan India</h3>
-                <p className="text-muted">Locations Served</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Meet The Team */}
-          <div className="row mb-5">
-            <div className="col-12 text-center">
-              <h2 className="text-dark font-weight-bold mb-3 text-warning-700">
-                Meet The Team
-              </h2>
-              <div className="team-member my-36 ">
-                <h4 className="text-dark font-weight-bold">
-                  Founder: Kishor Patel
-                </h4>
+          {/* Vision & Mission */}
+          <div className="row text-center my-36 ">
+            <div className="col-md-6">
+              <div className="p-40 bg-white rounded shadow-sm">
+                <h3 className="text-primary font-weight-bold mb-2">
+                  Our Vision
+                </h3>
                 <p className="text-muted">
-                  Kishor Patel, founder of Mega Trade Inc Supplies, with his 15+ years
-                  of experience in the corporate stationery industry, has made
-                  superior connections and brought Mega Trade Inc to where it is
-                  today.
+                  Worry-free administrators and <br />
+                  facilities managers.
                 </p>
               </div>
-              <div className="team-member my-36">
-                <h4 className="text-dark font-weight-bold">
-                  Co-Founder: Vikas Patel
-                </h4>
+            </div>
+            <div className="col-md-6">
+              <div className="p-40 bg-white rounded shadow-sm">
+                <h3 className="text-primary font-weight-bold mb-2">
+                  Our Mission
+                </h3>
                 <p className="text-muted">
-                  Vikas Patel, co-founder of Mega Trade Inc Supplies, with his 10+
-                  years of experience, has really accelerated Mega Trade Inc and made
-                  it deserving of its clients.
+                  To provide honest, no-nonsense, timely, and consistent quality
+                  supplies for workplace needs, enabling peace of mind.
                 </p>
               </div>
             </div>
           </div>
-          <Collabs />
+          <div className="row text-center my-36">
+            <div className="col-md-6">
+              <div className="p-40 bg-white rounded shadow-sm">
+                <h3 className="text-primary font-weight-bold mb-2">
+                  Why Choose Mega Trade Inc?
+                </h3>
+                <p className="text-muted">
+                  Our innovative housekeeping chemicals, comparable to TASKI and
+                  3M, can reduce your facilities management costs by up to 30%.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="p-40 bg-white rounded shadow-sm">
+                <h3 className="text-primary font-weight-bold mb-2">
+                  Our Core Values
+                </h3>
+                <ul className="text-muted">
+                  <li>Integrity towards quality</li> 
+                  <li>WYSIWYG – "What You Say is What You
+                  Get"</li>  
+                  <li>Honest and consistent supplies</li> 
+                  <li>Quick turnaround time for
+                  all orders</li> 
+                  <li>Nationwide reach with PAN India supplies</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          {/* Product Range */}
+          <div className="text-center mb-5">
+            <h2 className="font-weight-bold text-primary mb-40">
+              Our Product Range
+            </h2>
+            <div className="row">
+              <div className="col-md-4">
+                <div className="p-40 bg-white rounded shadow-sm">
+                  <h4 className="text-dark mb-20">The Works (Stationery)</h4>
+                  <p className="text-muted">
+                    Papers, sticky notes, pens, printer cartridges, and more.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="p-40 bg-white rounded shadow-sm">
+                  <h4 className="text-dark mb-20">
+                    Shine & Bright (Housekeeping)
+                  </h4>
+                  <p className="text-muted">
+                    Cleaning chemicals, tissue products, and safety equipment.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="p-40 bg-white rounded shadow-sm">
+                  <h4 className="text-dark mb-20">Eat & Drink (Pantry)</h4>
+                  <p className="text-muted">
+                    Cookies, energy bars, soft drinks, and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Statistics */}
+          <div className="row text-center my-20">
+            <div className="col-md-4">
+              <div className="p-40 bg-secondary text-white rounded shadow-sm">
+                <h2 className="text-white">250+</h2>
+                <p>Satisfied Clients</p>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="p-40 bg-secondary text-white rounded shadow-sm">
+                <h2 className="text-white">8+</h2>
+                <p>Years of Experience</p>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="p-40 bg-secondary text-white rounded shadow-sm">
+                <h2 className="text-white">Pan India</h2>
+                <p>Locations Served</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
       <Brands />
     </>
   );
