@@ -27,9 +27,23 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="row">
+          <div className="p-10">
             <p className="text-dark">
-            Mega Trade Inc (MTI), established in 2017, is a leading supplier of high-quality office supplies, pantry consumables, housekeeping products, and equipment to the corporate world in Bangalore, Chennai, and Mumbai. With over 30 years of combined experience, our promoters have a deep understanding of the corporate supply industry, enabling us to offer reliable and consistent service. Our dedicated team, with over 40 years of collective experience, ensures timely and efficient deliveries tailored to your needs. Located in the heart of Bangalore's IT hubs, we serve key areas like ITPL and Electronic City, providing swift service and quick turnaround times. We also have a warehouse in SR Nagar, offering easy access to our range of products. At MTI, we are committed to making the lives of administrators and facilities managers easier with quality products and dependable service, all backed by our core values of integrity, reliability, and customer satisfaction.
+              Mega Trade Inc (MTI), established in 2017, is a leading supplier
+              of high-quality office supplies, pantry consumables, housekeeping
+              products, and equipment to the corporate world in Bangalore,
+              Chennai, and Mumbai. With over 30 years of combined experience,
+              our promoters have a deep understanding of the corporate supply
+              industry, enabling us to offer reliable and consistent service.
+              Our dedicated team, with over 40 years of collective experience,
+              ensures timely and efficient deliveries tailored to your needs.
+              Located in the heart of Bangalore's IT hubs, we serve key areas
+              like ITPL and Electronic City, providing swift service and quick
+              turnaround times. We also have a warehouse in SR Nagar, offering
+              easy access to our range of products. At MTI, we are committed to
+              making the lives of administrators and facilities managers easier
+              with quality products and dependable service, all backed by our
+              core values of integrity, reliability, and customer satisfaction.
             </p>
           </div>
           {/* Vision & Mission */}
@@ -56,8 +70,6 @@ const About = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="row gy-4 text-center my-36">
             <div className="col-md-6">
               <div className="card">
                 <h4 className="text-primary font-weight-bold mb-10">
@@ -87,8 +99,31 @@ const About = () => {
             </div>
           </div>
 
+          <div className="text-center mb-5 my-40">
+            <h2 className="font-weight-bold text-primary mb-40">Our Team</h2>
+            <div className="row gy-4 justify-content-center text-center">
+              <div className="col-md-6">
+                <h4 className=" font-weight-bold mb-20">Founder : ?</h4>
+                <p className="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                  officiis omnis culpa maxime facilis dolore laborum saepe quasi
+                  corporis, accusamus, ipsa excepturi dolorum eum expedita
+                  mollitia numquam ipsum beatae animi?
+                </p>
+              </div>
+              <div className="col-md-6">
+                <h4 className=" font-weight-bold mb-20">CEO : ?</h4>
+                <p className="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                  officiis omnis culpa maxime facilis dolore laborum saepe quasi
+                  corporis, accusamus, ipsa excepturi dolorum eum expedita
+                  mollitia numquam ipsum beatae animi?
+                </p>
+              </div>
+            </div>
+          </div>
           {/* Product Range */}
-          <div className="text-center mb-5">
+          <div className="text-center mt-40">
             <h2 className="font-weight-bold text-primary mb-40">
               Our Product Range
             </h2>
@@ -123,7 +158,7 @@ const About = () => {
           </div>
 
           {/* Statistics */}
-          <div className="row text-center gy-4 my-20 justify-content-center">
+          <div className="row text-center gy-4 mt-10 justify-content-center">
             <div className="col-lg-4 col-sm-6">
               <div className="p-40 bg-secondary text-white rounded shadow-sm">
                 <h2 className="text-white">250+</h2>
