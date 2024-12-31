@@ -7885,12 +7885,12 @@ input:focus-visible {
 }
 
 .logo img {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 @media screen and (max-width: 424px) {
     .logo img {
-        max-width: 148px;
+        max-width: 250px;
     }
 }
 /* Header Menu and Submenu Css Start */

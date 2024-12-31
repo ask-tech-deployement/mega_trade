@@ -26,37 +26,35 @@ const Footer = () => {
 
           <div className="footer-item" style={{ maxWidth: "500px" }}>
             <div
-              className="flex-align gap-16 mb-16"
-              style={{ flexWrap: "wrap" }}
+              className="flex-align gap-16 mb-16 d-flex align-items-center"
             >
               <FaPhoneAlt />
-              <a
-                href={`tel:${phone1}`}
-                className="text-md text-gray-900 hover-text-main-600"
-              >
-                {phone1}
-              </a>{" "}
-              |{" "}
-              <a
-                href={`tel:${phone2}`}
-                className="text-md text-gray-900 hover-text-main-600"
-              >
-                {phone2}
-              </a>{" "}
-              | <br />
-              <a
-                href={`tel:${phone3}`}
-                className="text-md text-gray-900 hover-text-main-600"
-              >
-                {phone3}
-              </a>{" "}
-              |{" "}
-              <a
-                href={`tel:${phone4}`}
-                className="text-md text-gray-900 hover-text-main-600"
-              >
-                {phone4}
-              </a>
+              <div className="d-flex gap-10 flex-column" style={{ flexWrap: "wrap" }}>
+                <a
+                  href={`tel:${phone1}`}
+                  className="text-md text-gray-900 hover-text-main-600"
+                >
+                  {phone1}
+                </a>
+                <a
+                  href={`tel:${phone2}`}
+                  className="text-md text-gray-900 hover-text-main-600"
+                >
+                  {phone2}
+                </a>
+                <a
+                  href={`tel:${phone3}`}
+                  className="text-md text-gray-900 hover-text-main-600"
+                >
+                  {phone3}
+                </a>
+                <a
+                  href={`tel:${phone4}`}
+                  className="text-md text-gray-900 hover-text-main-600"
+                >
+                  {phone4}
+                </a>
+              </div>
             </div>
             <div className="flex-align gap-16 mb-16">
               <MdEmail />

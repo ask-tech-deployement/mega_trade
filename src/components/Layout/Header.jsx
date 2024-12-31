@@ -162,6 +162,7 @@ const Header = () => {
                 handleClickFilter();
                 handleSearchToggle();
               }}
+              style={{backgroundColor:'var(--main-900)'}}
               type="button"
               className="w-48 h-48 rounded-circle flex-center text-xl text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8"
             >
@@ -180,7 +181,6 @@ const Header = () => {
         <button
           onClick={() => {
             handleMenuToggle();
-            setActiveIndex(null);
           }}
           type="button"
           className="close-button"
@@ -196,15 +196,17 @@ const Header = () => {
 
             <ul className="nav-menu flex-align nav-menu--mobile">
               <li
-                onClick={() => handleMenuClick(0)}
+                onClick={() => {
+                  handleMenuClick(0)
+                }}
                 className="nav-menu__item "
               >
-                <Link to="/" className={`nav-menu__link ${activeIndex===3?"activePage":''}`}>
+                <Link to="/" className={`nav-menu__link ${activeIndex===0?"activePage":''}`}>
                   Home
                 </Link>
               </li>
               <li onClick={() => handleMenuClick(1)} className="nav-menu__item">
-                <Link to="/about" className={`nav-menu__link ${activeIndex===3?"activePage":''}`}>
+                <Link to="/about" className={`nav-menu__link ${activeIndex===1?"activePage":''}`}>
                   About Us
                 </Link>
               </li>
@@ -213,7 +215,7 @@ const Header = () => {
                 onClick={() => handleMenuClick(2)}
                 className="nav-menu__item "
               >
-                <Link to="#" className={`nav-menu__link ${activeIndex===3?"activePage":''}`}>
+                <Link to="#" className={`nav-menu__link ${activeIndex===2?"activePage":''}`}>
                   Brochure
                 </Link>
               </li>
@@ -245,7 +247,7 @@ const Header = () => {
                 action="#"
                 className="flex-align flex-wrap form-location-wrapper"
               >
-                <div className="search-category style-two d-flex h-48 search-form d-sm-flex d-none">
+                <div className="search-category style-two d-flex h-48 search-form">
                   <select
                     ref={categorySelect}
                     className="js-example-basic-single border border-gray-200 border-end-0 rounded-0 border-0"
@@ -356,14 +358,14 @@ const Header = () => {
                     type="button"
                     className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
                   >
-                    <i className="ph ph-x" />{" "}
+                    <i className="ph ph-x text-white" />{" "}
                   </button>
-                  <div className="logo px-16 d-lg-none d-block">
+                  <div className="logo px-16 d-lg-none d-block text-center">
                     <Link to="/" className="link">
                       <img src={logo} alt="Logo" />
                     </Link>
                   </div>
-                  <ul className="scroll-sm p-0 py-8 overflow-y-auto">
+                  <ul className="scroll-sm p-0 py-8 overflow-y-auto ">
                     {categorys?.map((mcat) => (
                       <li
                         key={mcat.MainCategory_Id}
@@ -446,7 +448,7 @@ const Header = () => {
                       >
                         <Link
                           to={`/product/${mainCat.MainCategory_Id}/0`}
-                          className="text-dark text-15 py-12 px-16 flex-align gap-8 rounded-0"
+                          className="text-white text-15 py-12 px-16 flex-align gap-8 rounded-0"
                         >
                           <span>{mainCat.MainCategory_Description}</span>
                           <span className="icon text-md d-flex ms-auto">
@@ -554,7 +556,7 @@ const Header = () => {
               <button
                 onClick={handleMenuToggle}
                 type="button"
-                className="toggle-mobileMenu d-lg-none ms-3n text-gray-800 text-4xl d-flex "
+                className="toggle-mobileMenu d-lg-none ms-3n text-4xl d-flex "
               >
                 {" "}
                 <i className="ph ph-list text-white" />{" "}

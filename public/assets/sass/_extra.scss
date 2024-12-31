@@ -756,6 +756,19 @@
   }
 }
 
+.top-brand__item{
+  img{
+    max-width: 150px;
+    max-height: 70px;
+    object-fit: contain;
+  }
+  @include md-screen{
+    img{
+      max-width: 70px;
+    }
+  }
+}
+
 .testimonials {
   .slick-arrow.slick-prev {
     position: absolute;

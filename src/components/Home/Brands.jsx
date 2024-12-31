@@ -100,12 +100,7 @@ const Brands = () => {
                       src={`assets/images/brands/${i}.png`}
                       alt={`brand-${i}`}
                       className="sc-khLCKb eYtuVG"
-                      style={{
-                        maxWidth: "150px",
-                        maxHeight: "70px",
-                        objectFit: "contain",
-                        // mixBlendMode: "multiply",
-                      }}
+                     
                     />
                   </div>
                 </div>

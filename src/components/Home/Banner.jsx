@@ -71,7 +71,7 @@ const Banner = () => {
                   >
                     <Link
                       // to={`/product/${mainCat.MainCategory_Id}/0`}
-                      className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
+                      className=" text-white text-15 py-12 px-16 flex-align gap-8 rounded-0"
                     >
                       <span>{mainCat.MainCategory_Description}</span>
                       <span className="icon text-md d-flex ms-auto">

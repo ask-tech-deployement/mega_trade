@@ -123,7 +123,7 @@ const FeaturedOneHome = ({ title, categoryid }) => {
                                   ? `${imageURL}/${product.Image}`
                                   : noimg
                               }
-                              style={{ objectFit: "contain" }}
+                              style={{ objectFit: "contain" , maxHeight:'200px' }}
                             />
                             <div className="product-card__content my-20 flex-grow-1">
                               <h6 className="title text-lg fw-semibold mb-12">
@@ -163,7 +163,7 @@ const FeaturedOneHome = ({ title, categoryid }) => {
                                   ? `${imageURL}/${product.Image}`
                                   : noimg
                               }
-                              style={{ objectFit: "contain" }}
+                              style={{ objectFit: "contain", maxHeight:'200px' }}
                             />
                             <div className="product-card__content my-20 flex-grow-1">
                               <h6 className="title text-lg fw-semibold mb-12">

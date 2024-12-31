@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
-import {phone1,phone2,phone3,phone4,email,address} from '../../utils'
+import { phone1, phone2, phone3, phone4, email, address } from "../../utils";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -287,37 +287,42 @@ const Contact = () => {
           <div className="col-lg-4">
             <div className="contact-box border border-gray-100 rounded-16 px-24 py-40">
               <h6 className="mb-48">Get In Touch</h6>
-              <div className="flex-align gap-16 mb-16" style={{flexWrap:'wrap'}}>
+              <div
+                className="flex-align gap-16 mb-16"
+                style={{ flexWrap: "wrap" }}
+              >
                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
                   <i className="ph-fill ph-phone-call" />
                 </span>
-                <a
-                  href={`tel:${phone1}`}
-                  className="text-md text-gray-900 hover-text-main-600"
+                <div
+                  className="d-flex gap-10 flex-column"
+                  style={{ flexWrap: "wrap" }}
                 >
-                  {phone1}
-                </a>{" "}
-                |{" "}
-                <a
-                  href={`tel:${phone2}`}
-                  className="text-md text-gray-900 hover-text-main-600"
-                >
-                  {phone2}
-                </a>{" "}
-                | <br />
-                <a
-                  href={`tel:${phone3}`}
-                  className="text-md text-gray-900 hover-text-main-600"
-                >
-                  {phone3}
-                </a>{" "}
-                |{" "}
-                <a
-                  href={`tel:${phone4}`}
-                  className="text-md text-gray-900 hover-text-main-600"
-                >
-                  {phone4}
-                </a>
+                  <a
+                    href={`tel:${phone1}`}
+                    className="text-md text-gray-900 hover-text-main-600"
+                  >
+                    {phone1}
+                  </a>
+                  <a
+                    href={`tel:${phone2}`}
+                    className="text-md text-gray-900 hover-text-main-600"
+                  >
+                    {phone2}
+                  </a>
+                  <a
+                    href={`tel:${phone3}`}
+                    className="text-md text-gray-900 hover-text-main-600"
+                  >
+                    {phone3}
+                  </a>
+                  <a
+                    href={`tel:${phone4}`}
+                    className="text-md text-gray-900 hover-text-main-600"
+                  >
+                    {phone4}
+                  </a>
+                </div>
                 {/* <Link
                   to="/tel:+00123456789"
                   
@@ -334,7 +339,7 @@ const Contact = () => {
                   href={`mailto:${email}`}
                   className="text-md text-gray-900 hover-text-main-600"
                 >
-                 {email}
+                  {email}
                 </a>
                 {/* <Link
                   to="mailto:kishore@buroneed.com"
@@ -347,9 +352,7 @@ const Contact = () => {
                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
                   <i className="ph-fill ph-map-pin" />
                 </span>
-                <span className="text-md text-gray-900 ">
-                 {address}
-                </span>
+                <span className="text-md text-gray-900 ">{address}</span>
               </div>
             </div>
             {/* <div className="mt-24 flex-align flex-wrap gap-16">

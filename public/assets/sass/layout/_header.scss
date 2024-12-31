@@ -29,9 +29,9 @@
 
 .logo {
     img {
-        max-width: 200px;
+        max-width: 250px;
         @include xsm-screen {
-            max-width: 148px;
+            max-width: 250px;
         }
     }
 }
@@ -126,7 +126,7 @@
     @extend .box-shadow-lg; 
     inset-block-start: 100%;
     width: max-content;
-    background-color: hsl(var(--white));
+    background-color: var(--main-900);
     border-radius: 6px;
     min-width: 190px;
     overflow: hidden;
@@ -310,5 +310,7 @@
         border-bottom: 0 !important;
     }
 }
+
+
 
 /* ================================= Header Css End =========================== */
