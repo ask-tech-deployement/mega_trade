@@ -115,8 +115,8 @@
             li {
                 &.active {
                     > a {
-                        background: var(--gray-50);
-                        color: var(--gray-800) !important;
+                        // background: var(--gray-50);
+                        color: var(--main-400) !important;
                         font-weight: 600;
                         .icon {
                             transform: rotate(90deg);
@@ -125,6 +125,10 @@
                 }
                 a {
                     border-bottom: 1px solid var(--gray-100);
+                    background-color: var(--main-900);
+                    &:hover{
+                        background-color: var(--main-900);
+                    }
                 }
             }
         }

@@ -10,7 +10,7 @@ import { IoLogInOutline } from "react-icons/io5";
 import logo from "../../assets/header/logo.png";
 import axios from "../../axios";
 import cartContext from "../Context/cartContext";
-import {phone1,phone2,phone3,phone4,email} from '../../utils'
+import {phone1,phone2,email} from '../../utils'
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -107,10 +107,6 @@ const Header = () => {
            {phone1}
           </a> | <a href={`tel:${phone2}`}>
            {phone2}
-          </a> | <a href={`tel:${phone3}`}>
-           {phone3}
-          </a> | <a href={`tel:${phone4}`}>
-           {phone4}
           </a>
         </li>
         <li>
@@ -135,6 +131,7 @@ const Header = () => {
       </ul>
       <div
         className={`side-overlay ${(menuActive || activeCategory) && "show"}`}
+        onClick={()=>{setMenuActive(false);setActiveCategory(false)}}
       />
       {/* ==================== Search Box Start Here ==================== */}
 
@@ -464,6 +461,7 @@ const Header = () => {
                               <li key={subcat.Category_Id}>
                                 <Link
                                   to={`/product/${mainCat.MainCategory_Id}/${subcat.Category_Id}`}
+                                  className="text-dark"
                                 >
                                   {subcat.Category_Description}
                                 </Link>
@@ -524,7 +522,7 @@ const Header = () => {
                   </button>
 
                   <Link
-                    to="/Login"
+                    to="http://targetdemo.asktek.net/tompg.buroneed.webapp/"
                     className="flex-align flex-column gap-8 item-hover-two"
                   >
                     <span className="text-2xl text-white d-flex position-relative item-hover__text">

@@ -87,6 +87,7 @@ const Banner = () => {
                           <li key={subcat.Category_Id}>
                             <Link
                               to={`/product/${mainCat.MainCategory_Id}/${subcat.Category_Id}`}
+                              className="text-dark"
                             >
                               {subcat.Category_Description}
                             </Link>

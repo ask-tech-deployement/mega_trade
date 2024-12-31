@@ -8344,8 +8344,8 @@ input:focus-visible {
     }
 
     .responsive-dropdown ul li.active > a {
-        background: var(--gray-50);
-        color: var(--gray-800) !important;
+        /* background: var(--gray-50); */
+        color: var(--main-400) !important;
         font-weight: 600;
     }
 
@@ -8381,6 +8381,7 @@ input:focus-visible {
 
     .responsive-dropdown .submenus-submenu__list li a {
         padding-left: 16px;
+       
     }
 
     .responsive-dropdown .submenus-submenu__list li a::before {

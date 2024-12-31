@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
-import { phone1, phone2, phone3, phone4, email, address } from "../../utils";
+import { phone1, phone2, email, address } from "../../utils";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -310,18 +310,7 @@ const Contact = () => {
                   >
                     {phone2}
                   </a>
-                  <a
-                    href={`tel:${phone3}`}
-                    className="text-md text-gray-900 hover-text-main-600"
-                  >
-                    {phone3}
-                  </a>
-                  <a
-                    href={`tel:${phone4}`}
-                    className="text-md text-gray-900 hover-text-main-600"
-                  >
-                    {phone4}
-                  </a>
+                  
                 </div>
                 {/* <Link
                   to="/tel:+00123456789"

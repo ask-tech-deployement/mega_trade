@@ -5,22 +5,22 @@ import { FaFacebookF, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
-import { phone1, phone2, phone3, phone4, email, address } from "../../utils";
+import { phone1, phone2, email, address } from "../../utils";
 
 const Footer = () => {
   return (
     <footer className="footer py-40 mt-40 bg-color-one">
       <div className="container container-lg">
         <div className="footer-item-two-wrapper d-flex align-items-start flex-wrap justify-content-center">
-          <div className="footer-item max-w-275">
+          <div className="footer-item max-w-300">
             <div className="footer-item__logo text-center">
               <Link to="/">
                 {" "}
                 <img src={logo} alt="" style={{ mixBlendMode: "multiply" }} />
               </Link>
             </div>
-            <p className="mb-24">
-              Empowering Workplaces with Quality Essentials!
+            <p className="mb-24 fw-bold">
+            Supplies That Empower Your Office
             </p>
           </div>
 
@@ -42,18 +42,7 @@ const Footer = () => {
                 >
                   {phone2}
                 </a>
-                <a
-                  href={`tel:${phone3}`}
-                  className="text-md text-gray-900 hover-text-main-600"
-                >
-                  {phone3}
-                </a>
-                <a
-                  href={`tel:${phone4}`}
-                  className="text-md text-gray-900 hover-text-main-600"
-                >
-                  {phone4}
-                </a>
+               
               </div>
             </div>
             <div className="flex-align gap-16 mb-16">
