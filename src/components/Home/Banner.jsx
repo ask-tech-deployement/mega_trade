@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Image1 from "../../assets/banner/banner-img1.png";
 import Image3 from "../../assets/banner/banner-img3.png";
-import Image4 from "../../assets/banner/banner-img4.png";
+import Image4 from "../../assets/banner/banner-img6.png";
 import axios from "../../axios";
 
 const Banner = () => {
@@ -14,10 +14,9 @@ const Banner = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true, 
-    autoplaySpeed: 3000, 
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
-  
 
   const [categorys, setCategorys] = useState([]);
 
@@ -162,16 +161,17 @@ const Banner = () => {
                   </div>
                 </div>
 
-                {/* New Slide 2: PPE Consumables */}
+                {/* New Slide 2: Eat  */}
                 <div className="banner-item-two">
                   <div className="banner-item-two__content">
                     <h2 className="banner-item-two__title bounce text-white">
-                      PPE Consumables
+                      Snack, Sip, and Smile!
                     </h2>
                     <p className="text-white mb-8">
-                      Gear up with our top-notch Safety Gear solutions for
-                      ultimate protection in the workplace, ensuring the safety
-                      of your employees.
+                      Delight your team with a variety of pantry essentials,
+                      from cookies and biscuits to energy bars, soft drinks,
+                      juices, and water—everything you need to keep taste buds
+                      satisfied and energy levels high in the office.
                     </p>
                     <Link
                       to="/product/10012/0"

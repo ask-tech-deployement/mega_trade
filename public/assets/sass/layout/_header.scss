@@ -1,8 +1,27 @@
 /* ============= Header Start Here ======================= */
 .header {
-    transition: .2s linear;
+    // transition: .2s linear;
     background-color: #0373ad;
-    &.fixed-header {
+    // &.fixed-header {
+    //     position: fixed;
+    //     inset-inline-start: 0;
+    //     inset-block-start: 0;
+    //     inset-inline-end: 0;
+    //     width: 100%;
+    //     z-index: 8;
+    //     backdrop-filter: blur(24px);
+    //     animation: slideDown 0.35s ease-out;    
+    //     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    //     @include md-screen {
+    //         inset-block-start: -1px;
+    //     }
+    // }
+}
+
+
+.full-header{
+    transition: .2s linear;
+    &.fixed-header{
         position: fixed;
         inset-inline-start: 0;
         inset-block-start: 0;
