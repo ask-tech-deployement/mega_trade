@@ -267,14 +267,73 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <div
+        className={`responsive-dropdown cat common-dropdown d-lg-none d-block nav-submenu p-0 submenus-submenu-wrapper shadow-none border border-gray-100 ${
+          activeCategory && "active"
+        }`}
+      >
+        <button
+          onClick={() => {
+            handleCategoryToggle();
+            setActiveIndexCat(null);
+          }}
+          type="button"
+          className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
+        >
+          <i className="ph ph-x text-white" />{" "}
+        </button>
+        <div className="logo px-16 d-lg-none d-block text-center">
+          <Link to="/" className="link">
+            <img src={logo} alt="Logo" />
+          </Link>
+        </div>
+        <ul className="scroll-sm p-0 py-8 overflow-y-auto ">
+          {categorys?.map((mcat) => (
+            <li
+              key={mcat.MainCategory_Id}
+              onClick={() => handleCatClick(mcat.MainCategory_Id)}
+              className={`has-submenus-submenu ${
+                activeIndexCat === mcat.MainCategory_Id ? "active" : ""
+              }`}
+            >
+              <Link
+                onClick={() => setActiveIndexCat(null)}
+                to={`/product/${mcat.MainCategory_Id}/0`}
+                className="text-white text-15 py-12 px-16 flex-align gap-8 rounded-0"
+              >
+                <span>{mcat.MainCategory_Description}</span>
+                <span className="icon text-md d-flex ms-auto">
+                  <i className="ph ph-caret-right" />
+                </span>
+              </Link>
+              <div
+                className={`submenus-submenu py-16 ${
+                  activeIndexCat === mcat.MainCategory_Id ? "open" : ""
+                }`}
+              >
+                <h6 className="text-lg px-16 submenus-submenu__title">
+                  {mcat.MainCategory_Description}
+                </h6>
+                <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
+                  {mcat.subCategories.map((scat) => (
+                    <li key={scat.Category_Description}>
+                      <Link
+                        to={`/product/${mcat.MainCategory_Id}/${scat.Category_Id}`}
+                      >
+                        {scat.Category_Description}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
       {/* ==================== Mobile Menu End Here ==================== */}
       {/* ======================= Middle Header Two Start ========================= */}
-      <div className={`full-header bg-white ${
-            scroll && "fixed-header"
-          }`} >
-        <header
-          className="header-middle style-two"
-        >
+      <div className={`full-header bg-white ${scroll && "fixed-header"}`}>
+        <header className="header-middle style-two">
           <div className="container container-lg">
             <nav className="header-inner flex-between">
               {/* Logo Start */}
@@ -369,9 +428,7 @@ const Header = () => {
         </header>
         {/* ======================= Middle Header Two End ========================= */}
         {/* ==================== Header Two Start Here ==================== */}
-        <header
-          className="header border-bottom border-gray-100 "
-        >
+        <header className="header border-bottom border-gray-100 ">
           <div className="container container-lg">
             <nav className="header-inner d-flex justify-content-between gap-8">
               <div className="flex-align menu-category-wrapper">
@@ -386,73 +443,6 @@ const Header = () => {
                     </span>
                     <span className="d-sm-flex d-none">All</span> Categories
                   </button>
-                  <div
-                    className={`responsive-dropdown cat common-dropdown d-lg-none d-block nav-submenu p-0 submenus-submenu-wrapper shadow-none border border-gray-100 ${
-                      activeCategory && "active"
-                    }`}
-                  >
-                    <button
-                      onClick={() => {
-                        handleCategoryToggle();
-                        setActiveIndexCat(null);
-                      }}
-                      type="button"
-                      className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
-                    >
-                      <i className="ph ph-x text-white" />{" "}
-                    </button>
-                    <div className="logo px-16 d-lg-none d-block text-center">
-                      <Link to="/" className="link">
-                        <img src={logo} alt="Logo" />
-                      </Link>
-                    </div>
-                    <ul className="scroll-sm p-0 py-8 overflow-y-auto ">
-                      {categorys?.map((mcat) => (
-                        <li
-                          key={mcat.MainCategory_Id}
-                          onClick={() => handleCatClick(mcat.MainCategory_Id)}
-                          className={`has-submenus-submenu ${
-                            activeIndexCat === mcat.MainCategory_Id
-                              ? "active"
-                              : ""
-                          }`}
-                        >
-                          <Link
-                            onClick={() => setActiveIndexCat(null)}
-                            to={`/product/${mcat.MainCategory_Id}/0`}
-                            className="text-white text-15 py-12 px-16 flex-align gap-8 rounded-0"
-                          >
-                            <span>{mcat.MainCategory_Description}</span>
-                            <span className="icon text-md d-flex ms-auto">
-                              <i className="ph ph-caret-right" />
-                            </span>
-                          </Link>
-                          <div
-                            className={`submenus-submenu py-16 ${
-                              activeIndexCat === mcat.MainCategory_Id
-                                ? "open"
-                                : ""
-                            }`}
-                          >
-                            <h6 className="text-lg px-16 submenus-submenu__title">
-                              {mcat.MainCategory_Description}
-                            </h6>
-                            <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
-                              {mcat.subCategories.map((scat) => (
-                                <li key={scat.Category_Description}>
-                                  <Link
-                                    to={`/product/${mcat.MainCategory_Id}/${scat.Category_Id}`}
-                                  >
-                                    {scat.Category_Description}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
                 </div>
                 <div
                   className={`category main  on-hover-item text-white d-block`}
