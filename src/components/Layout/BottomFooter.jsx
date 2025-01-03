@@ -9,7 +9,7 @@ const BottomFooter = () => {
           <p className="bottom-footer__text text-center text-13">
             © Copyright 2024.
             <a
-              href="https://live.asktek.net/megatrade_manage_website_ui/login"
+              href="https://live.asktek.net/megatrade_manage_website_ui"
               target="_blank"
               rel="noreferrer"
             >
