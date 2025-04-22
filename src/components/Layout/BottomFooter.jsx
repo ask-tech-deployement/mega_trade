@@ -21,7 +21,7 @@ const BottomFooter = () => {
               target="_blank"
               rel="noreferrer"
             >
-              ASK Technologies
+              Ask Technology
             </a>
           </p>
         </div>
